@@ -48,7 +48,7 @@
 3. Room_Number                        TINYINT                  NOT NULL
 4. Capacity                           INT                      NOT NULL
 5. Description                        VARCHAR(max_length=120)  NOT NULL
-6. Photo                              IMAGE                    NOT NULL
+6. Photo                              VARCHAR(max_length=220)  NULL
    
 ### 2. RoomCategory
 #### Поля:
@@ -80,7 +80,7 @@
 4. Image                              IMAGE                    NULL
 5. History                            VARCHAR(max_length=120)  NULL
 6. Details                            VARCHAR(max_length=120)  NULL
-7. Certificate                        IMAGE                    NULL
+7. Certificate                        VARCHAR(max_length=220)  NULL
    
 ### 6. PromoCode
 #### Поля:
@@ -172,10 +172,9 @@
 4. Last_Name                          VARCHAR(max_length=20)   NOT NULL
 5. Patronymic                         VARCHAR(max_length=30)   NOT NULL
 6. Description                        VARCHAR(max_length=120)  NULL
-7. Photo                              IMAGE                    NOT NULL
+7. Photo                              VARCHAR(max_length=220)  NOT NULL
    
 ## Не нормализованная модель БД:
-![Фин1](https://github.com/user-attachments/assets/450bb1ad-aa9a-42c9-8e56-1caa0212bd40)
-
+![Фин1](https://github.com/user-attachments/assets/f9d08237-32a9-404f-994c-94822bc335fd)
 ## Даталогическая модель БД:
 ![Фин2](https://github.com/user-attachments/assets/62a82fb4-91ed-4fdc-b6bc-837d6111e5ff)
