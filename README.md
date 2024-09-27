@@ -175,6 +175,7 @@
 7. Photo                              VARCHAR(max_length=220)  NOT NULL
    
 ## Не нормализованная модель БД:
-![Фин1](https://github.com/user-attachments/assets/f9d08237-32a9-404f-994c-94822bc335fd)
+![Фин2](https://github.com/user-attachments/assets/c964b346-4518-4401-8579-27a1f7c74297)
+
 ## Даталогическая модель БД:
-![Фин2](https://github.com/user-attachments/assets/62a82fb4-91ed-4fdc-b6bc-837d6111e5ff)
+![Документ13](https://github.com/user-attachments/assets/5d17c3ee-486d-46f5-8adb-4b6b8ad349de)
