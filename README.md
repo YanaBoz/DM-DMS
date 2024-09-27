@@ -175,6 +175,7 @@
 7. Photo                              IMAGE                    NOT NULL
    
 ## Не нормализованная модель БД:
-![Фин1](https://github.com/user-attachments/assets/f9d08237-32a9-404f-994c-94822bc335fd)
+![Фин1](https://github.com/user-attachments/assets/450bb1ad-aa9a-42c9-8e56-1caa0212bd40)
+
 ## Даталогическая модель БД:
 ![Фин2](https://github.com/user-attachments/assets/62a82fb4-91ed-4fdc-b6bc-837d6111e5ff)
