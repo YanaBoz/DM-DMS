@@ -47,14 +47,14 @@
 2. Category_Id     [FK: RoomCategory] INT                      NOT NULL                 (один ко многим)
 3. Room_Number                        TINYINT                  NOT NULL
 4. Capacity                           INT                      NOT NULL
-5. Description                        VARCHAR(max_length=150)  NOT NULL
+5. Description                        VARCHAR(max_length=120)  NOT NULL
 6. Photo                              IMAGE                    NOT NULL
    
 ### 2. RoomCategory
 #### Поля:
 1. Category_Id     [PK]               INT                      NOT NULL AUTO_INCREMENT
 2. Name                               VARCHAR(max_length=20)   NOT NULL
-3. Description                        VARCHAR(max_length=150)  NULL
+3. Description                        VARCHAR(max_length=120)  NULL
 4. Price                              FLOAT                    NOT NULL
    
 ### 3. News
@@ -75,18 +75,18 @@
 ### 5. About
 #### Поля:
 1. About_Id        [PK]               INT                      NOT NULL AUTO_INCREMENT
-2. Description                        VARCHAR(max_length=150)  NOT NULL
-3. Video                              VARCHAR(max_length=150)  NULL
+2. Description                        VARCHAR(max_length=120)  NOT NULL
+3. Video                              VARCHAR(max_length=120)  NULL
 4. Image                              IMAGE                    NULL
-5. History                            VARCHAR(max_length=150)  NULL
-6. Details                            VARCHAR(max_length=150)  NULL
+5. History                            VARCHAR(max_length=120)  NULL
+6. Details                            VARCHAR(max_length=120)  NULL
 7. Certificate                        IMAGE                    NULL
    
 ### 6. PromoCode
 #### Поля:
 1. Promo_Id        [PK]               INT                      NOT NULL AUTO_INCREMENT
 2. Code                               VARCHAR(max_length=20)   NOT NULL
-3. Description                        VARCHAR(max_length=150)  NULL
+3. Description                        VARCHAR(max_length=120)  NULL
 4. Discount_Type                      VARCHAR(max_length=20)   NOT NULL
 5. Discount_Value                     FLOAT                    NOT NULL
    
@@ -171,8 +171,11 @@
 3. First_Name                         VARCHAR(max_length=30)   NOT NULL
 4. Last_Name                          VARCHAR(max_length=20)   NOT NULL
 5. Patronymic                         VARCHAR(max_length=30)   NOT NULL
-6. Description                        VARCHAR(max_length=150)  NULL
+6. Description                        VARCHAR(max_length=120)  NULL
 7. Photo                              IMAGE                    NOT NULL
    
 ## Не нормализованная модель БД:
 ![Фин](https://github.com/user-attachments/assets/2c6fedf7-68a0-452c-a878-3c8f90882039)
+
+## Даталогическая модель БД:
+![Фин2](https://github.com/user-attachments/assets/b6bb210a-7df3-40d8-bc7f-53179e980be9)
