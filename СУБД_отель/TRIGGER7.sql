@@ -1,0 +1,8 @@
+CREATE TRIGGER EmpPos_Create
+ON [MDSMDB].[dbo].[EmployeePosition]
+AFTER INSERT
+AS 
+BEGIN 
+   INSERT INTO [MDSMDB].[dbo].[CRUD]
+   VALUES (SYSTEM_USER, 1, 1, GETDATE())
+END

@@ -1,0 +1,8 @@
+CREATE TRIGGER EmpPos_Delete
+ON [MDSMDB].[dbo].[EmployeePosition]
+AFTER UPDATE
+AS 
+BEGIN 
+   INSERT INTO [MDSMDB].[dbo].[CRUD]
+   VALUES (SYSTEM_USER, 4, 1, GETDATE())
+END

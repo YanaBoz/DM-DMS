@@ -1,0 +1,8 @@
+CREATE TRIGGER Reservation_Update
+ON [MDSMDB].[dbo].[Reservation]
+AFTER UPDATE
+AS 
+BEGIN 
+   INSERT INTO [MDSMDB].[dbo].[CRUD]
+   VALUES (SYSTEM_USER, 3, 2, GETDATE())
+END
